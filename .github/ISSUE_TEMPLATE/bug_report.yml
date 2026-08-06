@@ -1,0 +1,107 @@
+name: Bug report
+description: Something in a keelapps app is not working as it should
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this.
+
+        **Before you write:** this tracker is public. Please do not include
+        credentials, API tokens, customer names, or screenshots showing
+        confidential data. If the problem involves a security vulnerability,
+        stop here and follow [our security policy](https://github.com/keelapps/support/blob/main/SECURITY.md) instead.
+
+  - type: dropdown
+    id: app
+    attributes:
+      label: Which app?
+      options:
+        - AccessLens (Jira)
+        - Digest (Jira)
+        - Evergreen (Confluence)
+        - Mail Templates (Jira)
+        - Recur (Jira)
+        - Not sure
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the behaviour you saw, and what you expected instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: The smallest sequence that reliably triggers it.
+      placeholder: |
+        1. Open …
+        2. Configure …
+        3. The app then …
+    validations:
+      required: true
+
+  - type: input
+    id: when
+    attributes:
+      label: When did it happen?
+      description: >
+        Date, approximate time, and timezone. This lets us locate the exact
+        request in our logs, which is often the fastest route to a cause.
+      placeholder: 2026-08-06, around 14:30 CEST
+    validations:
+      required: false
+
+  - type: input
+    id: site
+    attributes:
+      label: Atlassian site
+      description: >
+        Optional, but it speeds up diagnosis considerably — it identifies which
+        installation to look at. Hostname only (example.atlassian.net), never
+        credentials.
+      placeholder: example.atlassian.net
+    validations:
+      required: false
+
+  - type: dropdown
+    id: reproducible
+    attributes:
+      label: How often does it happen?
+      options:
+        - Every time
+        - Intermittently
+        - Happened once
+    validations:
+      required: false
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      placeholder: Chrome 141, Safari 26
+    validations:
+      required: false
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: Screenshots or anything else
+      description: Drag images in directly. Redact anything confidential first.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Before submitting
+      options:
+        - label: I have checked that this issue is not already reported.
+          required: true
+        - label: This report contains no credentials or confidential data.
+          required: true
