@@ -30,14 +30,18 @@ jobs:
               'General question about keelapps': null,
             };
 
+            // Issue forms render as "### Which app?" followed by a blank line
+            // and the answer. Take the first non-empty line after the heading.
             const body = context.payload.issue.body || '';
-            const match = body.match(/###\s*Which app\?\s*\r?\n\s*\r?\n\s*(.+)/);
-            if (!match) {
+            const section = body.split(/###\s*Which app\?/)[1];
+            const answer = section
+              && section.split('\n').map(s => s.trim()).find(s => s.length > 0);
+
+            if (!answer) {
               core.info('No "Which app?" answer found; nothing to do.');
               return;
             }
 
-            const answer = match[1].trim();
             if (!(answer in CHOICES)) {
               core.warning(`Unrecognised app answer: ${answer}`);
               return;
