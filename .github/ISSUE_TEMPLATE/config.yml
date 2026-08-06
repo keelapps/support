@@ -7,7 +7,3 @@ contact_links:
   - name: Billing, licensing, refunds, or evaluation periods
     url: https://support.atlassian.com/contact/
     about: These are handled by Atlassian Marketplace, not by keelapps.
-
-  - name: Email us instead
-    url: mailto:SUPPORT_EMAIL_PLACEHOLDER
-    about: For anything confidential, or if you would rather not use a public tracker.

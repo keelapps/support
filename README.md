@@ -48,10 +48,6 @@ This tracker is public and permanent. Two things should go elsewhere:
   Atlassian, not by us. Contact
   [Atlassian Marketplace support](https://support.atlassian.com/contact/).
 
-If you cannot use a public tracker — because the details are confidential, or
-because you do not have a GitHub account — email us instead at
-SUPPORT_EMAIL_PLACEHOLDER. Nothing is lost by taking that route.
-
 ## What to expect
 
 We read everything. Issues are triaged within a few working days, and we would

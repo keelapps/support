@@ -8,10 +8,8 @@ Our apps handle permission data, content metadata, and scheduled automation
 inside customer Jira and Confluence sites. A publicly posted vulnerability
 report is actionable by anyone who reads it before we have shipped a fix.
 
-Report it privately by one of these routes:
-
-- Email **SUPPORT_EMAIL_PLACEHOLDER** with `SECURITY` in the subject line, or
-- Use GitHub's [private vulnerability reporting](https://github.com/keelapps/support/security/advisories/new)
+Report it privately through GitHub's
+[private vulnerability reporting](https://github.com/keelapps/support/security/advisories/new).
 
 Please include what you found, how to reproduce it, and what an attacker could
 do with it. If you have a proof of concept, keep it to the minimum needed to
