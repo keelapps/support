@@ -1,0 +1,31 @@
+.github/ISSUE_TEMPLATE/config.yml
+  s_ab0167faa01a67::t_dcfee423db07f3 1-13
+SECURITY.md
+  s_ab0167faa01a67::t_aed46ff0e4ad17 1-45
+.github/ISSUE_TEMPLATE/bug_report.yml
+  s_ab0167faa01a67::t_85ec33e90bd7c8 1-107
+.github/ISSUE_TEMPLATE/feature_request.yml
+  s_ab0167faa01a67::t_377de4f6d8f943 1-64
+.github/ISSUE_TEMPLATE/question.yml
+  s_ab0167faa01a67::t_8fb47246a949c8 1-33
+.github/workflows/label-app.yml
+  s_ab0167faa01a67::t_2376c1f34f64bd 1-65
+README.md
+  s_ab0167faa01a67::t_004afc754a90f0 1-64
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.21",
+  "base_commit_sha": "8b8e11ed493d5d1588e510ba9cbeb15836034c92",
+  "prompts": {},
+  "sessions": {
+    "s_ab0167faa01a67": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "436c5ae9-55ae-46e2-88c6-11d6338372b8",
+        "model": "claude-opus-5"
+      },
+      "human_author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  }
+}
