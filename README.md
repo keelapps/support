@@ -54,6 +54,15 @@ We read everything. Issues are triaged within a few working days, and we would
 rather tell you plainly that something is out of scope than leave it open
 indefinitely. Issues closed without a fix will say why.
 
+## Legal
+
+All keelapps apps adopt the Atlassian standard end-user agreement (Bonterms v1.0)
+and publish a per-app privacy policy. Our apps are zero-egress: they run on
+Atlassian Forge, store data in the customer's own Atlassian tenant, and the
+vendor never touches customer data — so we are not a data processor under GDPR
+and do not sign separate DPAs. See [LEGAL.md](LEGAL.md) for the full rationale
+and the per-app status table.
+
 ---
 
 <sub>keelapps builds administration and compliance apps for Atlassian Cloud.
