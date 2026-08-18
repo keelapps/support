@@ -21,6 +21,7 @@ body:
         - Evergreen (Confluence)
         - Mail Templates (Jira)
         - Recur (Jira)
+        - Keelhaven (macOS)
         - General question about keelapps
     validations:
       required: true

@@ -1,11 +1,14 @@
-name: Bug report
-description: Something in a keelapps app is not working as it should
+name: Bug report (Atlassian apps)
+description: Something in a Jira or Confluence app is not working as it should
 labels: ["bug", "needs-triage"]
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for taking the time to report this.
+
+        **For Keelhaven, the macOS backup app, use the other bug template** —
+        it asks for the details that actually identify a Mac problem.
 
         **Before you write:** this tracker is public. Please do not include
         credentials, API tokens, customer names, or screenshots showing

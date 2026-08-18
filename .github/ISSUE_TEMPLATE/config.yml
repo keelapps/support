@@ -4,6 +4,10 @@ contact_links:
     url: https://github.com/keelapps/support/blob/main/SECURITY.md
     about: Report it privately, never as a public issue.
 
-  - name: Billing, licensing, refunds, or evaluation periods
+  - name: Billing or licensing — Atlassian apps
     url: https://support.atlassian.com/contact/
     about: These are handled by Atlassian Marketplace, not by keelapps.
+
+  - name: Billing or licensing — Keelhaven
+    url: mailto:support@keelhaven.app
+    about: Keelhaven is sold directly, so these come to us.

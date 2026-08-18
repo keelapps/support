@@ -1,5 +1,5 @@
 name: Feature request
-description: Suggest something a keelapps app should be able to do
+description: Suggest something a keelapps product should be able to do
 labels: ["enhancement", "needs-triage"]
 body:
   - type: markdown
@@ -19,6 +19,7 @@ body:
         - Evergreen (Confluence)
         - Mail Templates (Jira)
         - Recur (Jira)
+        - Keelhaven (macOS)
         - A new app
     validations:
       required: true

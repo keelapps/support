@@ -1,8 +1,12 @@
 name: Label by app
 
 # Issue forms ask "Which app?" as a dropdown. This reads that answer and
-# applies the matching `app: …` label, so a single tracker covering five
-# products stays filterable.
+# applies the matching `app: …` label, so a single tracker covering every
+# product stays filterable.
+#
+# The Keelhaven bug template has no such dropdown — it is already
+# product-specific, so it carries `app: keelhaven` in its own `labels:` and
+# this workflow leaves it alone (no answer found, nothing to do).
 
 on:
   issues:
@@ -24,6 +28,7 @@ jobs:
               'Evergreen (Confluence)': 'app: evergreen',
               'Mail Templates (Jira)': 'app: mail-templates',
               'Recur (Jira)': 'app: recur',
+              'Keelhaven (macOS)': 'app: keelhaven',
               'Not sure': 'app: unknown',
               'A new app': 'app: new',
               // Deliberately unlabelled — not about a specific app.

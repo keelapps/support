@@ -1,5 +1,16 @@
 # 最终用户条款（EULA）决策 —— keelapps 全产品线
 
+keelapps 有两条产品线，法律路径完全不同，不能互相套用：
+
+| 产品线 | 销售渠道 | EULA | 状态 |
+| --- | --- | --- | --- |
+| 5 个 Atlassian Cloud 应用 | Atlassian Marketplace | Bonterms v1.0（标准协议） | 已决策，见第 1–6 节 |
+| Keelhaven（macOS） | 直销 | 需自建 | **待决，见第 7 节** |
+
+---
+
+# 第一部分：Atlassian Cloud 应用
+
 > 结论先行：**5 个 app 全部采用 Atlassian 官方标准最终用户协议
 > （Bonterms Standard End User Agreement v1.0），不加自定义条款。**
 > 这是法律上最省事、商业上最合理的做法，理由如下。
@@ -74,6 +85,62 @@ Bonterms §14 把责任上限压到"实付费用"，对独立开发者足够。�
 
 ---
 
+# 第二部分：Keelhaven（macOS）
+
+## 7. 为什么第一部分整体不适用
+
+Bonterms v1.0 是 Atlassian 为 **Marketplace 交易**提供的协议，它假定
+Atlassian 是收款方、是基础设施提供方、是争议处理通道。Keelhaven 直销，这三条
+全部不成立，所以不能沿用 —— 需要自己的最终用户条款。
+
+同样不能沿用的还有第 4 节的 DPA 论证。结论碰巧一致（我们不是 GDPR 意义上的
+数据处理者），但**理由完全不同**，不能照抄：
+
+- Atlassian 线：Forge 平台强制零出网，数据留在客户租户内；
+- Keelhaven：我们**根本没有接收端**。没有账号系统、没有遥测、没有我们的服务器。
+  备份从用户的 Mac 直接写入用户自己的存储（本地盘 / NAS / 自有 S3 桶），加密在
+  离开机器之前完成。我们不在数据路径上，因此无从处理。
+
+唯一实际接触到个人数据的环节是**支持邮件**：`support@keelhaven.app` 经
+Cloudflare Email Routing 转发到我们读的邮箱。这一段我们是数据控制者（controller）
+而非处理者，处理范围仅限对方主动写给我们的内容，已在
+<https://keelhaven.app/privacy> 中写明。
+
+## 8. 上架销售前必须决定的三件事
+
+按依赖顺序排列 —— 第 2 项会反过来约束第 1 和第 3 项，先定它。
+
+**1）最终用户条款（EULA）本身。**
+需要落到条款的实质承诺，网站上已经公开说了，条款不能与之矛盾：
+
+- "One-time purchase at 1.0 — bought once, updates forever, never a subscription."
+  —— *updates forever* 是一个很强的永久承诺。多数同类产品的做法是"买断当前
+  大版本 + N 年更新"。要么在条款里明确兑现它，要么在开卖前改网站文案。**两者
+  必须一致，这是目前最大的敞口。**
+- 备份软件的责任限制条款（数据丢失场景）。
+- 忘记 repository password 即数据不可恢复 —— 网站 FAQ 已声明，条款应呼应。
+
+**2）支付渠道，以及由此决定的 merchant of record。**
+这不只是选支付工具，它决定谁承担增值税/销售税义务：
+
+- **用 Paddle / Lemon Squeezy 这类 merchant of record**：它们作为法律上的卖方
+  代收代缴各国 VAT/GST/销售税，独立开发者通常选这条；
+- **用 Stripe 直连**：keelapps 自己是卖方，欧盟 VAT、英国 VAT、美国各州销售税
+  的登记与申报义务全部落在自己身上。
+
+**3）退款政策。** 数字商品在欧盟有 14 天撤回权，以及可放弃该权利的条件。选定
+渠道后按渠道要求写。
+
+## 9. 已完成的部分
+
+- 隐私政策：已发布 <https://keelhaven.app/privacy>；
+- 开源合规：Keelhaven 分发 restic 二进制，BSD 2-Clause 声明随应用包内
+  （`Contents/Resources/restic-LICENSE.txt`，About 窗口可见）并镜像在
+  <https://keelhaven.app/licenses>；商标免责声明同页；
+- 支持渠道：`support@keelhaven.app`，以及本仓库。
+
+---
+
 ## 各 app 状态速查
 
 | App | EULA | 隐私政策 | 支持邮箱 | 备注 |
@@ -83,6 +150,7 @@ Bonterms §14 把责任上限压到"实付费用"，对独立开发者足够。�
 | Evergreen | 标准 Bonterms | `docs/PRIVACY.md` 待发布 | 待建 | — |
 | Mail Templates | 标准 Bonterms | `docs/privacy-policy.md` 待发布 | 待建 | 通知类，买家会问发件人身份 —— 隐私政策已写明走 Jira `/notify` |
 | Recur | 标准 Bonterms | `docs/privacy-policy.md` 待发布 | 待建 | — |
+| **Keelhaven** | **待建（不适用 Bonterms）** | 已发布 `keelhaven.app/privacy` | `support@keelhaven.app` | 直销；支付渠道与退款政策待定，见第 8 节 |
 
 ## 参考来源
 
