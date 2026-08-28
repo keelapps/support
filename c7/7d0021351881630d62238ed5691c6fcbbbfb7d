@@ -1,0 +1,21 @@
+.github/ISSUE_TEMPLATE/config.yml
+  s_446278b7863e0c::t_4c8ea40d3ad90a 3-6
+README.md
+  s_446278b7863e0c::t_b1eff2eedaa7da 11-17,25-27,29,31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "c77d0021351881630d62238ed5691c6fcbbbfb7d",
+  "prompts": {},
+  "sessions": {
+    "s_446278b7863e0c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6154527d-fa8a-4c98-a18f-ab988f7743a8",
+        "model": "claude-fable-5"
+      },
+      "human_author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  }
+}
