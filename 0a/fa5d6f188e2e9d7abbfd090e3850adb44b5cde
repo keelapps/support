@@ -1,0 +1,20 @@
+SECURITY.md
+  s_f837db32c071ce::t_ce38d697609fe0 30-31
+  s_f837db32c071ce::t_4a5402baa2fbca 12-13
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "0afa5d6f188e2e9d7abbfd090e3850adb44b5cde",
+  "prompts": {},
+  "sessions": {
+    "s_f837db32c071ce": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b5c19a50-b1c3-457c-997a-97230392d9c3",
+        "model": "claude-fable-5"
+      },
+      "human_author": "Keelapps <support@keelapps.atlassian.net>"
+    }
+  }
+}
