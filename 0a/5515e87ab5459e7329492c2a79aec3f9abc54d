@@ -1,0 +1,37 @@
+.github/ISSUE_TEMPLATE/bug_report.yml
+  s_446278b7863e0c::t_2fa67eee3b8dc7 1-107
+.github/ISSUE_TEMPLATE/config.yml
+  s_f837db32c071ce::t_f2047a1172d2e6 1-13
+.github/ISSUE_TEMPLATE/feature_request.yml
+  s_446278b7863e0c::t_66a4eb465d26fa 1-64
+.github/ISSUE_TEMPLATE/question.yml
+  s_446278b7863e0c::t_068a724e2573fe 1-33
+.github/workflows/label-app.yml
+  s_446278b7863e0c::t_95a4e27beedb51 1-69
+README.md
+  s_f837db32c071ce::t_2e82b1b76f73e5 1-52
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "0a5515e87ab5459e7329492c2a79aec3f9abc54d",
+  "prompts": {},
+  "sessions": {
+    "s_446278b7863e0c": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "6154527d-fa8a-4c98-a18f-ab988f7743a8",
+        "model": "claude-fable-5"
+      },
+      "human_author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    },
+    "s_f837db32c071ce": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "b5c19a50-b1c3-457c-997a-97230392d9c3",
+        "model": "claude-fable-5"
+      },
+      "human_author": "shenxianpeng <xianpeng.shen@gmail.com>"
+    }
+  }
+}
