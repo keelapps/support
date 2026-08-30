@@ -1,0 +1,33 @@
+name: Question
+description: Ask how something works, or whether an app can do what you need
+labels: ["question", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Questions are welcome, including pre-purchase ones. If an app cannot do
+        what you need, we would rather tell you before you install it.
+
+        This tracker is public — please leave out credentials, customer names,
+        and confidential configuration.
+
+  - type: dropdown
+    id: app
+    attributes:
+      label: Which app?
+      options:
+        - AccessLens (Jira)
+        - Digest (Jira)
+        - Evergreen (Confluence)
+        - Mail Templates (Jira)
+        - Recur (Jira)
+        - General question about keelapps
+    validations:
+      required: true
+
+  - type: textarea
+    id: question
+    attributes:
+      label: What would you like to know?
+    validations:
+      required: true

@@ -1,0 +1,13 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Keelapps support portal
+    url: https://keelapps.atlassian.net/helpcenter/support/
+    about: Bugs, feature requests, and questions for all keelapps Atlassian apps — no GitHub account needed.
+
+  - name: Security vulnerability
+    url: https://github.com/keelapps/support/blob/main/SECURITY.md
+    about: Report it privately, never as a public issue.
+
+  - name: Billing or licensing
+    url: https://support.atlassian.com/contact/
+    about: These are handled by Atlassian Marketplace, not by keelapps.
