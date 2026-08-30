@@ -1,0 +1,16 @@
+.github/ISSUE_TEMPLATE/config.yml
+  h_cd61d860612957 4
+README.md
+  h_cd61d860612957 12,22
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.0",
+  "base_commit_sha": "2db59f7d8eefba931144fbe2fd3637a332e089fe",
+  "prompts": {},
+  "humans": {
+    "h_cd61d860612957": {
+      "author": "Keelapps <support@keelapps.atlassian.net>"
+    }
+  }
+}
